@@ -1,5 +1,0 @@
-service vendor.fingerprint-default /vendor/bin/hw/android.hardware.biometrics.fingerprint-service.example.M06
-    class hal
-    user root
-    group root drmrpc uhid system nobody
-

@@ -4,7 +4,7 @@
 
 soong_namespace {
     imports: [
-        "device/fcnt/M06",
+        "device/fcnt/hakone",
         "hardware/qcom-caf/sm8450",
         "hardware/qcom-caf/wlan",
         "vendor/qcom/opensource/commonsys/display",
@@ -26419,7 +26419,7 @@ cc_prebuilt_library_shared {
                 "proprietary/system_ext/lib64/libwfdservice.so",
             ],
             shared_libs: [
-                "libaudioclient_shim.M06",
+                "libaudioclient_shim.hakone",
                 "liblog",
                 "libutils",
                 "libcutils",
@@ -27860,9 +27860,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "android.hardware.sensors@2.1-multihal.M06.xml",
+    name: "android.hardware.sensors@2.1-multihal.hakone.xml",
     owner: "fcnt",
-    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors@2.1-multihal.M06.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/android.hardware.sensors@2.1-multihal.hakone.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -27896,9 +27896,9 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
-    name: "fingerprint-default.M06.xml",
+    name: "fingerprint-default.hakone.xml",
     owner: "fcnt",
-    src: "proprietary/vendor/etc/vintf/manifest/fingerprint-default.M06.xml",
+    src: "proprietary/vendor/etc/vintf/manifest/fingerprint-default.hakone.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -28397,12 +28397,12 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-    name: "android.hardware.biometrics.fingerprint-service.example.M06",
+    name: "android.hardware.biometrics.fingerprint-service.example.hakone",
     owner: "fcnt",
     target: {
         android_arm64: {
             srcs: [
-                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service.example.M06",
+                "proprietary/vendor/bin/hw/android.hardware.biometrics.fingerprint-service.example.hakone",
             ],
             shared_libs: [
                 "libbase",
